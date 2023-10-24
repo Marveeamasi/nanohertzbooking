@@ -1,0 +1,56 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11111111;
+    background: transparent;
+    cursor:not-allowed
+  }
+  
+  .loader {
+    display: flex;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+animation: spin 2s ease infinite;
+  }
+  
+  .loader-text{
+    color: #39c7f4;
+
+  }
+
+  @keyframes spin {
+    0% {
+        border-radius: 30% 70% 30% 70% / 70% 70% 30% 30%;
+    }
+    20% {
+        border-radius: 27% 73% 21% 79% / 77% 25% 75% 23%;
+      }
+      40% {
+        border-radius: 56% 44% 61% 39% / 77% 25% 75% 23%;
+      }
+      60% {
+        border-radius: 49% 51% 32% 68% / 79% 50% 50% 21%;
+      }
+     80% {
+        border-radius: 13% 87% 32% 68% / 79% 50% 50% 21%;
+      }
+    100% {
+        border-radius: 13% 87% 68% 32% / 18% 50% 50% 82%;
+    }
+  }
+  

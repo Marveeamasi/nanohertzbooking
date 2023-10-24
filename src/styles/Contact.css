@@ -1,0 +1,106 @@
+.section-main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 90px 50px 50px;
+}
+
+.section-main .section-a,
+.section-main .section-b {
+    width: 50%;
+}
+
+.section-main .section-a {
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    font-weight: 800;
+}
+
+.section-main .section-a span {
+    color: #39c7f4;
+    font-size: 60px;
+}
+
+.section-main .section-b {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-main .section-b .part {
+    padding: 15px 0px;
+    border-bottom: 1px solid #000;
+    width: 80%;
+}
+
+.section-main .section-b .part1,
+.section-main .section-b .part2,
+.section-main .section-b .part3 {
+    font-size: 16px;
+}
+
+.section-main .section-b .part2:hover,
+.section-main .section-b .part3:hover {
+    color: #39c7f4;
+    transition: color 100ms ease-in;
+}
+
+.section-main .section-b .part4 a {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    border: 1px solid #fff;
+
+}
+
+
+
+
+@media screen and (min-width:768px)and (max-width:1025px) {
+    .section-main {
+        gap: 3rem;
+    }
+
+    .section-main .section-a {
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .section-main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 170px 30px 50px;
+    }
+
+    .section-main .section-a {
+        font-size: 40px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .section-main .section-a span {
+        font-size: 35px;
+    }
+
+    .section-main .section-b {
+        width: 100%;
+    }
+
+    .section-main .section-b .part {
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    .section-main .section-b .part4 a {
+        width: 70%;
+    }
+}
